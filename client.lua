@@ -7,7 +7,7 @@ RegisterCommand('tesla', function()
       return
     else
         print('driver')
-        --coords here
-        --goto here
+        local coords = --coords here
+        TaskVehicleGotoNavmesh(pedInDriverSeat, vehicle, coords.x, coords.y, coords.z, 156, 5.0)
     end
 end)
